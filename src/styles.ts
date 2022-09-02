@@ -5,6 +5,14 @@ export const Container = styled.main`
   flex-direction: column;
   align-items: center;
   margin-top: 7.68rem;
+
+  @media (max-width: 420px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
 `
 
 export const Title = styled.div`
@@ -15,6 +23,12 @@ export const Title = styled.div`
   h1 {
     font-size: 2.5rem;
     margin-top: 10px;
+  }
+
+  @media (max-width: 420px) {
+    h1 {
+      text-align: center;
+    }
   }
 `
 
