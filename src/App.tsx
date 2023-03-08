@@ -16,7 +16,6 @@ export function App() {
   const [page, setPage] = useState(Math.floor(Math.random() * (1 + 500) + 1));
   const [movies, setMovies] = useState<Movies[]>([]);
   const [selectedMovie, setSelectedMovie] = useState<Movies>();
-  const [maxMovieSelected, setMaxMovieSelected] = useState(0);
   
   useEffect(() => {
     api.get(
